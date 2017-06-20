@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    //////////////////////////////////////////////////////////////////////
+                    <LinearLayout
+                        android:id="@+id/one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="7"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="12dp"
+                            android:background="@drawable/round_shape">
+
+                            <ImageView
+                                android:id="@+id/SenderIconImageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_launcher"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/senderNameTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rajvikram"
+                                android:textColor="?attr/colorButtonNormal"
+                                android:layout_marginLeft="5dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="9">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/chat_ractangle_border"
+                                        android:layout_marginRight="15dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:layout_marginTop="2dp"                                >
+
+                                        <TextView
+                                            android:id="@+id/SenderMessageTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:textColor="@color/text_color"
+                                            android:text="Hi"
+                                            android:clickable="true"
+                                            android:textSize="18dp"
+                                            android:padding="10dp"
+                                            android:minHeight="15dp"
+                                            android:minWidth="50dp"/>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"></LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    /////////////////////////////////////////////////
+                    <LinearLayout
+                        android:id="@+id/two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:weightSum="10"
+                        android:layout_below="@+id/one">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="9">
+
+                            <TextView
+                                android:id="@+id/receiverMessageTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="textEnd"
+                                android:text="Hello"
+                                android:gravity="center_vertical"
+                                android:textSize="18dp"
+                                android:padding="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="16dp"
+                                android:textColor="@color/text_color"
+                                android:clickable="true"
+                                android:minHeight="15dp"
+                                android:minWidth="50dp"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                   <!-- ///////////////////second //////////////////////////////-->
+                    //////////////////////////////////////////////////////////////////////
+                    <LinearLayout
+                        android:id="@+id/three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="7"
+                        android:gravity="center"
+                        android:layout_below="@+id/two">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="12dp"
+                            android:background="@drawable/round_shape">
+
+                            <ImageView
+                                android:id="@+id/SenderIconImageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_launcher"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/senderNameTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rajvikram"
+                                android:textColor="?attr/colorButtonNormal"
+                                android:layout_marginLeft="5dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="9">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/chat_ractangle_border"
+                                        android:layout_marginRight="15dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:layout_marginTop="2dp"                                >
+
+                                        <TextView
+                                            android:id="@+id/SenderMessageTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:textColor="@color/text_color"
+                                            android:text="Hope you are well. what are you doing ?"
+                                            android:clickable="true"
+                                            android:textSize="18dp"
+                                            android:padding="10dp"
+                                            android:minHeight="15dp"
+                                            android:minWidth="50dp"/>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"></LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    /////////////////////////////////////////////////
+                    <LinearLayout
+                        android:id="@+id/four"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:weightSum="10"
+                        android:layout_below="@+id/three">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="9">
+
+                            <TextView
+                                android:id="@+id/receiverMessageTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="textEnd"
+                                android:text="Ohh, reading about world"
+                                android:gravity="center_vertical"
+                                android:textSize="18dp"
+                                android:padding="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="16dp"
+                                android:textColor="@color/text_color"
+                                android:clickable="true"
+                                android:minHeight="15dp"
+                                android:minWidth="50dp"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <!-- ///////////////////second //////////////////////////////-->
+
+                    <!-- ///////////////////third //////////////////////////////-->
+                    //////////////////////////////////////////////////////////////////////
+                    <LinearLayout
+                        android:id="@+id/five"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="7"
+                        android:gravity="center"
+                        android:layout_below="@+id/four">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="12dp"
+                            android:background="@drawable/round_shape">
+
+                            <ImageView
+                                android:id="@+id/SenderIconImageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_launcher"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/senderNameTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rajvikram"
+                                android:textColor="?attr/colorButtonNormal"
+                                android:layout_marginLeft="5dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="9">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/chat_ractangle_border"
+                                        android:layout_marginRight="15dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:layout_marginTop="2dp"                                >
+
+                                        <TextView
+                                            android:id="@+id/SenderMessageTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:textColor="@color/text_color"
+                                            android:text="Great ! The world is the planet Earth and all life upon it, including human civilization."
+                                            android:clickable="true"
+                                            android:textSize="18dp"
+                                            android:padding="10dp"
+                                            android:minHeight="15dp"
+                                            android:minWidth="50dp"/>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"></LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    /////////////////////////////////////////////////
+                    <LinearLayout
+                        android:id="@+id/six"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:weightSum="10"
+                        android:layout_below="@+id/five">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="9">
+
+                            <TextView
+                                android:id="@+id/receiverMessageTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="textEnd"
+                                android:text="Yes and also the world is the whole of the physical Universe"
+                                android:gravity="center_vertical"
+                                android:textSize="18dp"
+                                android:padding="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="16dp"
+                                android:textColor="@color/text_color"
+                                android:clickable="true"
+                                android:minHeight="15dp"
+                                android:minWidth="50dp"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                    <!-- ///////////////////third //////////////////////////////-->
+
+                    <LinearLayout
+                        android:id="@+id/fives"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="7"
+                        android:gravity="center"
+                        android:layout_below="@+id/six">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="12dp"
+                            android:background="@drawable/round_shape">
+
+                            <ImageView
+                                android:id="@+id/SenderIconImageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/ic_launcher"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/senderNameTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rajvikram"
+                                android:textColor="?attr/colorButtonNormal"
+                                android:layout_marginLeft="5dp"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="9">
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/chat_ractangle_border"
+                                        android:layout_marginRight="15dp"
+                                        android:layout_marginBottom="4dp"
+                                        android:layout_marginTop="2dp"                                >
+
+                                        <TextView
+                                            android:id="@+id/SenderMessageTextView"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:textColor="@color/text_color"
+                                            android:text="ok bye"
+                                            android:clickable="true"
+                                            android:textSize="18dp"
+                                            android:padding="10dp"
+                                            android:minHeight="15dp"
+                                            android:minWidth="50dp"/>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"></LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/buttom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal"
+
+                android:weightSum="7">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_shape"
+                    android:padding="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/camera_one" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:weightSum="7"
+                    android:background="@drawable/rectangle_shape"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginBottom="7dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="8dp">
+
+                        <EditText
+                            android:id="@+id/WriteMessageEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/message"
+                            android:background="#FFFFFF"
+                            android:layout_gravity="center"
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="5dp"
+                            android:maxHeight="100dp"
+                            android:animateLayoutChanges="true"
+                            android:imeOptions="actionSend|flagNoEnterAction"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="2dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/gallery" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="2dp"
+                        android:layout_marginRight="7dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/like_love" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

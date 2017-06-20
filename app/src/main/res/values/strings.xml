@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Chat</string>
+
+    <string name="message">Write a message...</string>
+
+    <string name="bubole_chat">The world is the planet Earth and all life upon it, including human civilization.</string>
+    <string name="bubole_chat_one">This line is fully responsive.</string>
+</resources>
